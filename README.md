@@ -1,53 +1,70 @@
-Iris Classification Project 🌸
+# 🌸 Iris Classification Project
 
-This project demonstrates machine learning classification on the Iris dataset using Decision Tree and Perceptron models. The workflow includes data visualization, model training, evaluation, comparison, and saving trained models for future use.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.2.2-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Dataset
+This project demonstrates **machine learning classification** on the **Iris dataset** using **Decision Tree** and **Perceptron** models.  
+It includes **data visualization, model evaluation, model comparison**, and saving trained models for future use.  
 
-The project uses the classic Iris dataset
- consisting of 150 samples with 4 numerical features and 3 species labels:
+---
 
-Feature	Description
-sepal_length	Sepal length in cm
-sepal_width	Sepal width in cm
-petal_length	Petal length in cm
-petal_width	Petal width in cm
-species	Target label: Setosa, Versicolor, Virginica
-Features
+## 📖 Table of Contents
+1. [Dataset](#dataset)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Visual Results](#visual-results)
+6. [Saved Models](#saved-models)
+7. [Author](#author)
+8. [License](#license)
 
-Load and inspect dataset using pandas
+---
 
-Visualize feature relationships with Seaborn pairplots
+## 🌼 Dataset
 
-Train Decision Tree and Perceptron classifiers
+The project uses the classic [Iris dataset](https://archive.ics.uci.edu/ml/datasets/iris) with 150 samples, 4 numerical features, and 3 species labels:
 
-Evaluate models using:
+| Feature       | Description                     |
+|---------------|---------------------------------|
+| sepal_length  | Sepal length in cm               |
+| sepal_width   | Sepal width in cm                |
+| petal_length  | Petal length in cm               |
+| petal_width   | Petal width in cm                |
+| species       | Target label: Setosa, Versicolor, Virginica |
 
-Accuracy
+---
 
-Classification Report (precision, recall, f1-score)
+## 🚀 Features
 
-Confusion Matrix
+- Load and inspect dataset using **pandas**  
+- Visualize feature relationships with **Seaborn pairplots**  
+- Train **Decision Tree** and **Perceptron** classifiers  
+- Evaluate models using:  
+  - **Accuracy** ✅  
+  - **Classification Report** (precision, recall, f1-score) 📝  
+  - **Confusion Matrix** 🔢  
+- Compare model performance visually with bar plots 📊  
+- Save trained models as `.pkl` files for reuse 💾  
+- Save plots in `images/` folder for README display  
 
-Compare model performance visually with bar plots
+---
 
-Save trained models as .pkl files for later use
-
-Installation
+## 🛠 Installation
 
 Clone the repository:
 
-git clone <your-repo-url>
-cd <your-repo-folder>
+```bash
+git clone https://github.com/Raludzingana98/iris-classification.git
+cd iris-classification
 
-
-Install required libraries:
+Install required Python libraries:
 
 pip install pandas scikit-learn matplotlib seaborn joblib
 
-Usage
+💻 Usage
 
-Run the Python script:
+Run the script:
 
 python iris_classification.py
 
@@ -68,16 +85,18 @@ Show a comparison bar plot of model accuracies
 
 Save trained models as decision_tree_model.pkl and perceptron_model.pkl
 
-Visual Results
+Save plots in the images/ folder for documentation
+
+📊 Visual Results
 Pairplot of Dataset Features
 
 Confusion Matrices
 
 Accuracy Comparison
 
-Note: Save your generated plots into an images/ folder in your repository before pushing. Use plt.savefig("images/plot_name.png") in your code.
+Note: Ensure the images/ folder exists in your repository and your script saves plots using plt.savefig("images/plot_name.png").
 
-Saved Models
+💾 Saved Models
 
 decision_tree_model.pkl → Decision Tree classifier
 
@@ -90,7 +109,7 @@ import joblib
 dt_model = joblib.load('decision_tree_model.pkl')
 perc_model = joblib.load('perceptron_model.pkl')
 
-Author
+👤 Author
 
 Shumani Raludzingana
 
@@ -98,7 +117,7 @@ Shumani Raludzingana
 
 LinkedIn
 
-License
+⚖️ License
 
 This project is licensed under the MIT License – see the LICENSE
  file for details.
